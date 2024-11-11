@@ -1,0 +1,14 @@
+s = input()
+
+vowelList = []
+
+for i, letter in enumerate(s):
+    if letter in "aeiou":
+        vowelList.append((letter, i))
+newString = list(s)
+for i in range(len(vowelList)):
+    # char at index = char from other end
+    newString[vowelList[i][1]] = vowelList[len(vowelList)-i-1][0]
+
+print(''.join(newString))
+

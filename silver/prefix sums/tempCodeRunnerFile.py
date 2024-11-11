@@ -1,0 +1,1 @@
+OJ\USACO\silver\prefix sums\paintbarn.in
